@@ -26,7 +26,7 @@ This repository serves as a growing portfolio, showcasing:
 ## 📧 Contact
 Feel free to reach out with questions or collaboration opportunities:
 - **Email:** [putualit3@gmail.com](mailto:putualit3@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/alit-putradana/)
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/alit-putradana/)
 - **Portfolio Website:** Coming Soon
 
 Thank you for visiting my repository! 🙌
