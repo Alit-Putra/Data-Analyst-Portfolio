@@ -1,75 +1,105 @@
-# Layoffs Data Cleaning Project
+# Layoffs Data Cleaning & Visualization Project
 
-This project is part of Alex The Analyst - Data Analyst BootCamp which focuses on cleaning and preparing a dataset of company layoffs for analysis. The raw data includes records of layoffs across various industries, locations, and stages.
+## 📌 Project Overview
 
-### Dataset
-- **Source**: [Layoffs Dataset](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv)
-- **Raw Data**: Contains inconsistencies, null values, and duplicate rows.
+This project is part of Alex The Analyst's Data Analyst BootCamp, focusing on cleaning, preparing, and visualizing a dataset of company layoffs. The raw data includes records of layoffs across various industries, locations, and startup stages. The final output features interactive Excel dashboards for deeper insights.
+
+## 🗂 Dataset
+
+- Source: [Layoffs Dataset](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv)
+
+- Raw Data Issues: Inconsistencies, null values, and duplicate rows.
+
+- Cleaned Data Improvements:
+
+  - Removed duplicates
+
+  - Standardized fields (e.g., dates, industries)
+
+  - Handled missing values (NULL → 0)
+
+  - Added new filter columns: Layoff Severity, Month, and Year
+
+  - Saved cleaned data in layoffs_cleaned.csv
+
+## 🛠 Tools Used
+
+- MySQL – Data cleaning and querying
+
+- MySQL Workbench – SQL IDE
+
+- Excel – Data visualization with Pivot Tables & Dashboards
+
+- GitHub – Version control and project sharing
+
+## 🔍 Data Cleaning Process
+
+1. Create Schema: `world_layoffs`
+
+2. Load Dataset: Import `layoffs.csv`
+
+3. Run Cleaning Queries: Execute `layoffs_cleaning.sql`
+
+4. Export Cleaned Data: Save as `layoffs_cleaned.csv`
+
+## 📊 Exploratory Data Analysis (EDA)
 
 ### Objective
-To clean and standardize the data for further analysis by:
-- Removing duplicates
-- Standardizing fields (e.g., dates, industries)
-- Filling or handling missing values
-- Adding a primary key for easy identification
 
-### Tools Used
-- **MySQL** for querying and cleaning
-- **MySQL Workbench** for MySQL IDE
-- **GitHub** for version control
+To uncover trends, patterns, and insights in the layoffs dataset by analyzing industry distributions, time-based trends, and variable relationships.
 
-### How to Reproduce
-1. Create schema with name `world_layoffs`.
-2. Load the raw dataset (`layoffs.csv`) into the schema.
-3. Run the SQL queries in (`layoffs_cleaning.sql`).
-4. Review the cleaned dataset (`layoffs_cleaned.csv`).
+### EDA Steps
 
----
+Dataset Overview – Checked summary statistics & data distribution.
 
-# Exploratory Data Analysis (EDA)
+Trends Over Time – Analyzed layoffs by month and quarter.
 
-## Objective
-The goal of this exploratory data analysis (EDA) is to uncover patterns, trends, and insights in the layoffs dataset. This includes analyzing industry distributions, trends over time, and relationships between different variables.
+Industry & Country Analysis – Identified top affected sectors and regions.
 
-### Approach
+Correlation Analysis – Examined relationships between total layoffs, company stage, and funding.
 
-The EDA process involved the following steps:
-
-1. **Dataset Overview**
-   - Analyzed basic statistics for numeric columns (e.g., minimum, maximum, average, standard deviation).
-   - Identified the frequency distribution of industries and countries.
-
-2. **Trends Over Time**
-   - Evaluated layoffs over time by month and quarter.
-   - Analyzed temporal patterns to understand when layoffs peaked.
-
-3. **Category Comparisons**
-   - Compared layoffs across industries, countries, and startup stages.
-   - Highlighted the top 10 industries and countries most affected by layoffs.
-
-4. **Correlation Analysis**
-   - Explored potential relationships between variables like total layoffs and percentage laid off.
-   - Analyzed the relationship between funds raised and layoffs.
-
-5. **Anomaly Detection**
-   - Identified outliers in the dataset (e.g., unusually high layoffs).
-   - Flagged uncommon countries with very few records.
+Anomaly Detection – Flagged outliers and uncommon records.
 
 ### Key Findings
 
-1. The top industries affected by layoffs include Technology, Crypto, and Retail.
+- 📌 Tech, Crypto, and Retail saw the highest layoffs.
+- 📌 Layoffs peaked in November 2022 and early 2023.
+- 📌 The United States was the most affected country.
+- 📌 Post-IPO startups had the highest layoff numbers.
+- 📌 Some outliers suggest further investigation is needed.
 
-2. Layoffs peaked during [insert timeframe after query execution].
+## 📈 Excel Data Visualization
 
-3. Significant layoffs occurred in [insert countries after query execution].
+This project includes an Excel-based interactive dashboard to visualize layoffs across different industries, countries, and time periods.
 
-4. There is a potential correlation between startup stage and layoffs, as [insert stage insight].
+### Key Visualizations
 
-5. Anomalies in the data suggest outliers worth further investigation.
+1. Layoffs by Industry – Shows total layoffs per industry over time.
 
-### Usage
+2. Monthly Layoff Trends – Displays layoffs per month from 2020 to 2023.
 
-The SQL queries used for this analysis are documented in the `layoffs_eda.sql` file. To replicate the analysis, execute the queries in order on the `layoffs_cleaned` table.
+### How to Use the Dashboard
 
-### Important
-You could follow Alex The Analyst BootCamp on [YouTube](https://www.youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF). It is free, and you could learn a lot of things about Data Analysis.
+1. Download `layoffs_excel_visualization.xlsx`
+
+2. Open in Microsoft Excel or Google Sheets
+
+3. Explore the interactive Pivot Table & Dashboard
+
+Preview 📷
+![alt text](dashboard_ss.jpg)
+
+
+## 🚀 Future Improvements
+
+1. Geographic Heatmap – Visualize layoffs by country.
+
+
+## 🎓 Learn Together
+
+I followed Alex The Analyst's free BootCamp on [YouTube](https://www.youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF) and if you are interested to be Data Analyst, you should [follow](https://www.youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF) him too, to learn more about Data Analysis.
+
+## 📜 License
+
+This project is open-source. Feel free to use and modify it!
+
